@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="questions.css">
+	<script>
+		const questions = [{
+			title :'Quel est le nom du fondateur du Consumer Electronics Show ?',
+			responses:['Bill Gates', 'Steve Jobs', 'Jack Wayman'],
+			goodAnswer:2},
+			{title :'En quelle année est lancé le CES pour la première fois ?',
+			responses:['1973','1970','1967'],
+			goodAnswer:2},
+			{title :'Dans quelle ville s’est déroulé ce premier salon ?',
+			responses:['Los Angeles','New York','Chicago'],
+			goodAnswer:1},
+			{title :'Quelle technologie fut présentée en avant-première au CES de 1996?',
+			responses:['RDS','MP3','DVD'],
+			goodAnswer:2},
+			{title :'Quel nom connu portent les interventions des présidents d’entreprises au CES ?',
+			responses:['Keynotes','Tech Talks','Pitchs'],
+			goodAnswer:0}];
+
+		let count = 0;
+		function printanwser() {
+			console.log(count)
+			const nbQuestion = (questions.length)
+			document.getElementById("questions").innerHTML = questions[count].title;
+			document.getElementById("reponses_une").innerHTML = questions[count].responses[0];
+			document.getElementById("reponses_deux").innerHTML = questions[count].responses[1];
+			document.getElementById("reponses_trois").innerHTML = questions[count].responses[2];
+			if (count < nbQuestion - 1) {
+				count++
+			}else{
+				document.querySelector('button').outerHTML = '<a class="btn" href="validation.html" color="white">J\'ai fini </a>';
+			}
+		}
+
+		window.addEventListener("DOMContentLoaded", function() {
+        printanwser()
+    }, false);
+	</script>
+</head>
+<body>
+	<div class="container">
+	<div class="slider">
+	<p id="questions" color="black"></p>
+	<input type="radio" name="choix_un" value="goal" />
+		<p class="reponse" id="reponses_une"></p>
+	<input type="radio" name="choix_deux" value="acteur"/>
+		<p class="reponse" id="reponses_deux"></p><br/>
+	<input type="radio" name="choix_trois" value="president"/>
+		<p class="reponse" id="reponses_trois"></p>
+  
+    </div>
+    <div class="cont-btn"onclick="printanwser()">
+    	<button class="btn">
+			Suivant
+		</button>
+    </div>
+
+  </div>
+	
+</body>
+</html>

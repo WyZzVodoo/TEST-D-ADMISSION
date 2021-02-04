@@ -1,0 +1,91 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+	display: block;
+}
+.container{
+	width: 100%;
+	height: 50%;
+}
+
+.container img{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.information{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	background: #49bd9c;
+	color: white;
+	padding: 15px 40px;
+}
+
+.bloc{
+	background: #f1f1f1;
+	position: absolute;
+	top:55%;
+	width: 100%
+}
+
+.apparition {
+	margin-left: 35%;
+    color: #999;
+}
+
+.invisible {
+	display: none;
+}
+.visible{
+	display: all;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	padding: 15px 40px;
+}
+
+button {
+	flex-shrink: 0;
+	border: none;
+	outline: none;
+	background-color: #0373b1;
+	cursor: pointer;
+	color: #F1F1F1;
+	padding: 15px 40px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 20%;
+	left: 30%;
+}
+
+button::hover{
+	background-color: #0a354c;
+}
+
+
+footer {
+	background-color: #231F20;
+	position: absolute;
+	bottom: 0;
+	height: 10%;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+footer a{
+	position: absolute;
+	font-size: 10px;
+	top: 50%;
+	left: 50%;
+	text-decoration: none;
+	color: #898989; 
+}

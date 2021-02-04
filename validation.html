@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="validation.css">
+    <title>Validation</title>
+</head>
+<body>
+    <form class="formBloc">
+        <h1>Formulaire de contact</h1>
+
+        <div class="formGroup">
+            <label for="Nom">Nom</label>
+            <input type="text" id="nom">
+        </div>
+        <div class="formGroup">
+              <label for="Prenom">Prenom</label>
+              <input type="text" id="prenom">
+        </div>
+        <div class="formGroup">
+          <label for="mail">Adresse mail</label>
+          <input type="mail" id="mail">
+        </div>
+        <div class="formGroup">
+          <label for="Telephone">Telephone</label>
+          <input type="number" id="telephone">
+        </div>
+        <div class="formGroup">
+          <label for="age">Date de naissance</label>
+          <input type="date" name="anniversaire">
+        </div>
+        
+        <div class="formGroup">
+          <label for="Accompagnant">Personne avec vous</label>
+          <input type="number" id="accompagnant" list="nombre">
+        <datalist id="nombre">
+             <option>0</option>
+             <option>1</option> 
+             <option>2</option> 
+             <option>3</option> 
+        </datalist>
+        </div>
+        <div class="formGroupe">
+                <input type="submit" value="Envoyer"class="buttonSub">
+        </div>
+
+    </form>
+   </body>
+</html>

@@ -1,0 +1,57 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #edf1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karbon';
+}
+
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formBloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+}
+
+.formBloc .formGroupe .buttonSub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid #0373b1;
+    color: #FFFFFF;
+    background-color: #0373b1;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formBloc .formGroupe .buttonSub:hover {
+    background-color: #0a354c;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function DisplayLot(){
+			document.getElementById("hidden").classList.add ('visible');
+			document.getElementById("hidden").classList.remove('invisible');
+		}
+		function ConditionsGenerales() {
+  		window.alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<img class="logo"src="Logo.png">
+	</div>
+	<div class="information">
+		<p>
+			Pour l’édition 2022, les organisateurs souhaitent faire gagner des places au salon par l’intermédiaire d’un jeu-concours.
+		</p>
+	</div>
+		<div class="bloc">
+			<p class="apparition" onmouseover="DisplayLot()"> Prix a gagner ▼
+			</p>
+			<p id="hidden" class="invisible">Un voyage de 3 jours à Las Vegas avec entrées au CES pour 2 personnes.</br> et 10 drones DJI Mavic 2.
+			</p>
+		</div>			
+	
+	<button class="btn" onclick="location.href='questions.html'">
+		Participer 
+	</button>
+	<footer>
+		<a href="#" onclick="ConditionsGenerales()">
+			Informations & Conditions Générales 
+		</a>
+	</footer>
+</body>
+</html>
